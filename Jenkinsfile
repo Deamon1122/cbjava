@@ -28,4 +28,7 @@ node {
   stage ('Install') {
       sh "'${mvnHome}/bin/mvn' install"
   }
+  stage ('Deploy Artifacts to Jfrog are Nexus') {
+      sh "'${mvnHome}/bin/mvn' deploy"
+  }
 }
