@@ -4,6 +4,9 @@ node {
       git url: 'https://github.com/Deamon1122/cbjava.git', branch: 'main'
       mvnHome = tool 'maven'
    }
+  stage ('Code Scan') {
+      sh "'${mvnHome}/bin/mvn' verify sonar:sonar"
+   }
   stage ('Clean') {
       sh "'${mvnHome}/bin/mvn' clean"
   }
