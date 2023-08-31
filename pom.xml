@@ -39,13 +39,13 @@
     
     <repository>
         <id>central</id>
-        <name>a0zxtwnb2imap-artifactory-primary-0-releases</name>
-        <url>https://ayazc.jfrog.io/artifactory/new</url>
+        <name>a0pwnel5rmag6-artifactory-primary-0-releases</name>
+        <url>https://ayznw.jfrog.io/artifactory/ayaz</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>a0zxtwnb2imap-artifactory-primary-0-snapshots</name>
-        <url>https://ayazc.jfrog.io/artifactory/new</url>
+        <name>a0pwnel5rmag6-artifactory-primary-0-snapshots</name>
+        <url>https://ayznw.jfrog.io/artifactory/ayaz</url>
     </snapshotRepository>
     
 </distributionManagement>    
