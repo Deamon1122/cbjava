@@ -47,12 +47,12 @@ pipeline {
         }
           stage('Stage-9 : Deployment - Deploy a Artifact cloudbinary-5.0.0.war file to Tomcat Server') { 
             steps {
-                sh 'curl -u admin:redhat@123 -T target/**.war "http://65.2.79.39:8080/manager/text/deploy?path=/ayaz&update=true"'
+                sh 'curl -u admin:redhat@123 -T target/**.war "http://65.2.79.39:8080/manager/text/deploy?path=/az&update=true"'
             }
         } 
         stage('Stage-10 : SmokeTest') { 
             steps {
-                sh 'curl --retry-delay 10 --retry 5 "http://65.2.79.39:8080/ayaz"'
+                sh 'curl --retry-delay 10 --retry 5 "http://65.2.79.39:8080/az"'
             }
         }
     }
